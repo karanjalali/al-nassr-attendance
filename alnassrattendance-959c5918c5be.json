@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "alnassrattendance",
+  "private_key_id": "959c5918c5be2fbd45aaaee7cc419d3beef3d45e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC5E5lc2KX9dF64\nxXVXcKRAQECYIpEMnx+2ZNwvny8hTwSwZJWF4FtqpfCZMEWKCrf7OV3M9UrPUGqT\nqltp5cKFY0xNbfMDEgsf2MyCR8bI4B8yc31fLg24dLujPckrf5X8oPtiFyvCsyX0\njIngOWwt56JJETLd+rvG88Ahv+SmR7BObLVydRMDt21Mg+Nx9J4V5qH0vtFjGj30\nyC/Dk1yzCNfq/4b6uOlw8WdSYfm6o6HY9OuOdVA/226CfbUwS52uIQY022SOIjLQ\nBzrqKNrVTTYnC4qwsWn93vKAsclp9oeAUrWDw8gH6ZFp4mAwp3RQKS5GGe7KXIny\ndJfAmOsRAgMBAAECggEAC1Qi2sUf5XeXYfbjva9FXZG1Rn60q12s4bOzKubS+iZp\npIC2qpYC8IBxbZYP5qEM9ZeziTuBSZb7/BeVHoJ/7X1oVvO+SJuE0u1oyMd7GHII\nFNTvCVnCwR4Dm4yZVRRbZmYl9xFRJlsEDW/iE2eeaqGrbE6tQvtRXc5vLf2ukbs2\nKdZHV5Jbvqf2Kas0DqZO5hwHuQV4QFnq0ypNpGuFppY9DcznYAz2fB+Q2HTzdAX9\nUU3C8zgWXZteql58BF/KObmoUTkrDYVMVNGFbY1wC1zyaX11TKCyEU1H+ht4Y24d\nlk2o8KTo0be66fw/hr+WnMR9CQScpwRqMFOsGJOygQKBgQD2f04MV4p14i1+CmQr\nCMLCvlulYac8RS9Ynvyu8XFUlCZp4tYL8uNGqL+Oli7qQZKQG4A4+dyS7vdlkqhq\n/GPbROq+XmIM4cWHxHB/ZeM1GFzmvxqUWAMwUxK4wBslN4fuc0WNHH5h0fzxcQso\nwL0sxs1fZQF+96GcUpUt6EjygQKBgQDANiE0q9lDgVIbibevxfaUv065Ot3oYjWY\nvUBt9gfYzW1SxKjsyedl88wkgbWlDNjfuMzcy7DkbCkufS/dAu1fcKp9bzq3w3DY\n573qW0h8KbiHoauyLIlX52iCC+TmQqozUXhFyn5w0uY/NLmnO/ZFCn6xIP1FvZQ7\nG+tFqV+QkQKBgAEIybgNifwypcQ4oPD5SW/two6wGTaMh8VUbXUCeFpFgN/C3ukP\n7No4DQ25HZtICShnpSMYEU/ghtM7SU+hnX2nDWEdHkY1kFGghmRSdiCb6I/jT2Y9\n9E14m8SAsdx3Hi/m9ezAqNsaOXh94/EY1fJhJy12TApPWbNBOXUG23+BAoGASnBs\nOb7YHKmnx9x1FBDh50eT0G645DestCOPIUboURF15lkdZt7my/g4Nmc5lts73qDu\nThBgyIYPCN8Yu0pX7d9vV7bNEcASIx7U0T9a+iMaQQTevtk6s51+PucmVfq5ebhy\nkOzUPROgchgUUm0JekGPQUAadnjuQFoWqtrmlNECgYEA4OMeYvlj3RaZle32LHMd\nUBp0ZQfwOTtVDCuSBzaJ6vEpuoVmDT6GMzbVMk1Wh+GTYpZdGjrMQcJcTC5JzLsy\ngnowmb3iL5SWJQRIR5SBbJvyVgKSvsJiidOShs4tIbAolY/H+RiapE+VIm2Ea2ms\nFBuYR5tfVDj3ZitiivAceIk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "al-nassr-attendance@alnassrattendance.iam.gserviceaccount.com",
+  "client_id": "110711551850974952656",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/al-nassr-attendance%40alnassrattendance.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

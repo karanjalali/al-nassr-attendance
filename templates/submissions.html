@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attendance Submissions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .dark-mode .container {
+      background: #1e1e1e;
+    }
+
+    h2 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 25px;
+    }
+
+    .dark-mode h2 {
+      color: #66aaff;
+    }
+
+    .back-btn {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .back-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .toggle-btn {
+      display: block;
+      margin: 0 auto 20px;
+      padding: 10px 20px;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .toggle-btn:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .dark-mode .toggle-btn {
+      background-color: #444;
+      color: #fff;
+    }
+
+    .dark-mode .toggle-btn:hover {
+      background-color: #666;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 900px;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dark-mode table th {
+      background-color: #444;
+      color: #f4f4f4;
+    }
+
+    .dark-mode table tr:nth-child(even) {
+      background-color: #2a2a2a;
+    }
+
+    .dark-mode table tr:hover {
+      background-color: #3a3a3a;
+    }
+
+    @media screen and (max-width: 768px) {
+      th, td {
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      .toggle-btn {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="toggle-btn" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+    <h2>Attendance Submissions</h2>
+    <div style="text-align:center;">
+      <a class="back-btn" href="/attendance_form">← Back to Attendance Form</a>
+    </div>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>Present/Absent</th>
+            <th>Grade</th>
+            <th>Chapter Name</th>
+            <th>Sub-topic</th>
+            <th>Teacher</th>
+            <th>Branch</th>
+            <th>Batch</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Comments</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for entry in submissions %}
+          <tr>
+            {% for item in entry %}
+            <td>{{ item }}</td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode') ? 'on' : 'off');
+    }
+
+    // Persist theme across refresh
+    window.onload = () => {
+      if (localStorage.getItem('darkMode') === 'on') {
+        document.body.classList.add('dark-mode');
+      }
+    };
+  </script>
+</body>
+</html>
